@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <img src="" alt="">
+    <h1 id="title">Silver Soul Music Survey Form</h1>
+    <p id="description">Thank you for your time in helping us better our service!</p>
+    <div class="container">
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required></label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required></label>
+        <label id="number-label">Age (Optional): <input type="number" id="number" placeholder="Age" min="18" max="120"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Which option best describes your current role?</legend>
+        <select id="dropdown">
+          <option>Select your role</option>
+          <option>Student</option>
+          <option>Full-Time Job</option>
+          <option>Part-Time Job</option>
+          <option>Prefer Not to Say</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you refer Silver Soul Music to a friend?</legend>
+        <label>Absolutely!
+        <input type="radio" name="referral" value="referral" class="inline" checked></label>
+        <label>Probably! <input type="radio" name="referral" value="referral" class="inline"></label>
+        <label>Not sure! <input type="radio" name="referral" value="referral" class="inline"></label>
+        <label>Nope! <input type="radio" name="referral" value="referral" class="inline"></label>
+      </fieldset>
+      <fieldset>
+        <legend>What are your favorite features of Silver Soul Music?</legend>
+        <select>
+          <option>Select an option</option>
+          <option>Library</option>
+          <option>Accessibility</option>
+          <option>Blitz Shuffle</option>
+          <option>Adaptive EQ</option>
+          <option>Compatibility</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved? (Select all that apply!)</legend>
+                <label>Music Player
+        <input type="checkbox" value="music-player" class="inline"></label>
+        <label>Equalizer <input type="checkbox" value="eq" class="inline"></label>
+        <label>Library <input type="checkbox" value="library" class="inline"></label>
+        <label>Community <input type="checkbox" value="community" class="inline"></label>
+        <label>User Interface
+        <input type="checkbox" value="ui" class="inline"></label>
+        <label>Accessibility Features <input type="checkbox" value="accessibility" class="inline"></label>
+        <label>Store <input type="checkbox" value="store" class="inline"></label>
+        <label>Hands-free Options <input type="checkbox" value="hands-free" class="inline"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Any comments or suggestions?</legend>
+        <textarea rows="5" cols="30" placeholder="I think there should be more of..."></textarea>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+    </div>
+  </body>
+</html>
